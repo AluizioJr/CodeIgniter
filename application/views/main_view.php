@@ -10,7 +10,7 @@
 	<?php if($this->session->flashdata('msg')) ?>
 	<?php echo $this->session->flashdata('msg'); ?> </div>
 
-<div>
+<!-- <div>
 
 	<?php
 
@@ -29,26 +29,9 @@
 
 
 </div>
-
-<div>
-
-<ul>
-<?php
-
-	foreach($usuarios as $a){
-
-		echo '<li>'.anchor("maincontroller/apagar_usuario/$a->nome", 'Apagar').'-'.$a->nome.'-'.$a->email.'</li>';
+-->
 
 
-
-	};
-
-
-?>
-</ul>
-
-
-</div>
 
 <div>
 
@@ -73,7 +56,25 @@
 </div>
 
 
+<div>
 
+<ul>
+<?php
+
+	foreach($usuarios as $a){
+
+		echo '<li>'.anchor("maincontroller/apagar_usuario/$a->nome", 'Apagar').'-'.$a->nome.'-'.$a->email.'</li>';
+
+
+
+	};
+
+
+?>
+</ul>
+
+
+</div>
 
 </body>
 </html>
